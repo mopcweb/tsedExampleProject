@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "ES2018",
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "paths": {
+      "@app/*": ["src/*"],
+      "@api/*": ["src/api/*"],
+      "@dal/*": ["src/dal/*"],
+      "@lib/*": ["src/lib/*"],
+      "@utils/*": ["src/utils/*"],
+    }
+  },
+  "exclude": [
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}

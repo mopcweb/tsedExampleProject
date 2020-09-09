@@ -1,0 +1,13 @@
+### Dependencies
+node_modules
+**/node_modules/**
+
+### Bundle
+dist
+**/dist/**
+
+### Static
+**/server/**/static/**/*
+
+### JS
+**/server/**/*.js
