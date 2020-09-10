@@ -5,10 +5,8 @@
   "author": "Danil Moroz",
   "license": "ISC",
   "private": true,
-  "workspaces": [
-    "../someAnotherPackage/packages/*"
-  ],
   "scripts": {
+    "clean": ". ./clean.sh",
     "lint": "eslint . --ext .ts",
     "dev": "nodemon --config nodemon.json",
     "build": "rm -rf ./dist && tsc -p ./tsconfig.prod.json"
@@ -25,7 +23,8 @@
     "@utils": "dist/utils"
   },
   "dependencies": {
-    "@some-pkg/tsed": "^0.1.0",
+    "@some-pkg/test": "link:../someAnotherPackage/packages/test",
+    "@some-pkg/tsed": "file:../someAnotherPackage/packages/tsed",
     "@tsed/ajv": "5.65.1",
     "@tsed/common": "5.65.1",
     "@tsed/core": "5.65.1",

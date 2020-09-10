@@ -5,7 +5,10 @@ import { Configuration } from '@tsed/common';
 import '@tsed/swagger';
 
 import { Server } from '@some-pkg/tsed';
+import { test } from '@some-pkg/test';
 // import { Server } from './server';
+
+test();
 
 const API = '/api/v1';
 const settings: Partial<Configuration> = {
