@@ -15,9 +15,8 @@ Assuming that this git repo is in the same folder as https://github.com/mopcweb/
 If not, please change in ./package.json
 ```json
 ...
-"workspaces": [
-  "path/to/someExamplePackage/packages/*"
-],
+"@some-pkg/test": "link:path/to/someAnotherPackage/packages/test",
+"@some-pkg/tsed": "file:path/to/someAnotherPackage/packages/tsed",
 ...
 ```
 
